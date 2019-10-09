@@ -1,64 +1,159 @@
 #gold-filled-explained {
-    margin: 0 5%;
-    box-sizing: border-box;
-  }
-  .gold-filled-quick-list {
-    display: flex;
-    flex-direction: column;
-  }
-  .gold-filled-comparision {
-    flex: 1;
-    background-color: rgb(220, 220, 230);
-    border-radius: 5px;
-  }
-  .gold-filled-comparision:first-child {
-    margin-bottom: 15px;
-  }
-  .gold-filled-comparision h4{
-    padding-left: 15px;
-    font-size: 18px;
-    margin-bottom: 0;
-  }
-  .gold-filled-comparision ul li{
-    line-height: 1.3;
-  }
-  .more-gold-filled-styles{
-    display: flex;
-    flex-direction: column;
+  margin: 0 5%;
+  box-sizing: border-box;
+}
+#top-gold-filled-images {
+  display: flex;
+  flex-direction: column;
+}
+.gold-filled-top-image {
+  flex: 1;
+}
+#gold-filled-top-h3 {
+  margin: 0;
+}
+.gold-filled-top-image h4 {
+  display: none;
+}
+.gold-filled-top-image img {
+  width: 100%;
+  height: auto;
+}
+.gold-filled-quick-list {
+  display: flex;
+  flex-direction: column;
+}
+.gold-filled-comparision {
+  flex: 1;
+  background-color: rgb(210, 220, 230);
+  border-radius: 5px;
+}
+.gold-filled-comparision:first-child {
+  margin-bottom: 15px;
+}
+.gold-filled-comparision h4 {
+  padding-left: 15px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.gold-filled-comparision ul li {
+  line-height: 1.3;
+}
+.more-gold-filled-styles {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.more-gold-filled-styles h3 {
+  text-align: center;
+  font-size: 18px;
+}
+.gold-filled-product img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+#gold-karat-descriptions {
+  display: none;
+  flex-direction: row;
+}
+p.gold-filled-larger {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: rgb(173, 202, 230);
+  filter: drop-shadow(0 0 0.8rem);
+}
+@media only screen and (min-width: 640px), and (max-width: 769px) {
+  #gold-filled-explained {
+    max-width: 80%;
     margin: 0 auto;
   }
-  .gold-filled-product img{
+  #top-gold-filled-images {
+    flex-direction: row;
+  }
+  .gold-filled-top-image img {
+    max-width: 95%;
+  }
+  .gold-filled-quick-list {
+    flex-direction: row;
+  }
+  .gold-filled-comparision:first-child {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  .more-gold-filled-styles {
+    flex-direction: row;
+  }
+  .more-gold-filled-styles h3 {
+    font-size: 14px;
+  }
+  .gold-filled-product img {
+    max-width: 95%;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 202, 230);
+    filter: drop-shadow(0 0 0.4rem rgb(173, 202, 230));
+  }
+  p.gold-filled-larger {
+    text-align: center;
+    max-width: 70%;
+    margin: 30px auto;
+  }
+  #gold-karat-descriptions {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(210, 220, 230);
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .gold-description-list {
     flex: 1;
-    width: 100%;
-    height: auto;
-    border-radius: 3px solid pink;
   }
-  @media only screen and (min-width: 640px), and (max-width: 769px) {
-    #gold-filled-explained{
-      max-width: 70%;
-      margin: 0 auto;
-    }
-    .gold-filled-quick-list {
-      flex-direction: row;
-    }
-    .gold-filled-comparision:first-child {
-      margin-bottom: 0px;
-      margin-right: 10px;
-    }
-    .more-gold-filled-styles{
-      flex-direction: row;
-    }
+  .gold-description-list h4 {
+    font-size: 14px;
+    padding-left: 0;
   }
-  @media only screen and (min-width: 770px), and (max-width: 1024px){
-    .gold-filled-comparision{
-      margin: 0 auto;
-  max-width: 30%;
-    }
-    .gold-filled-product img{
-      max-width: 330px;
-    }
-    .more-gold-filled-styles{
-      justify-content: space-between;
-    }
+  .gold-description-list ul {
+    list-style: none;
+    padding-left: 0;
   }
-  
+  .gold-description-list ul li {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 770px), and (max-width: 1024px) {
+  .gold-filled-top-image h4 {
+    display: inline-block;
+    margin: 0;
+    left: 50%;
+    top: -40px;
+    position: relative;
+    transform: translateX(-50%);
+    color: #f8f8ff;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 3px #4c4c4c;
+  }
+  .gold-filled-comparision {
+    margin: 0 auto;
+    max-width: 30%;
+  }
+  .gold-filled-product img {
+    max-width: 300px;
+  }
+  .more-gold-filled-styles {
+    justify-content: space-between;
+    max-width: 65%;
+  }
+  .more-gold-filled-styles h3 {
+    font-size: 14px;
+  }
+  #gold-karat-descriptions {
+    max-width: 50%;
+  }
+  .gold-description-list h4 {
+    font-size: 18px;
+  }
+}
